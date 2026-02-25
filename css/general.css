@@ -1,0 +1,55 @@
+/* 
+
+---01 TYPOGRAPHY SYSTEM
+
+- FONT SIZE (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- FONT WEIGHTS
+Defaults: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- LINE HEIGHTS
+Default: 1
+Small1: 
+Medirm: 
+Paragraph Default: 
+
+- Letter Spacing
+
+
+---02 COLORS
+- Background color: #fff
+- Text color: #545454
+
+---05 SHADOWS
+
+---06 BORDER-RADIUS
+
+
+---07 WHITESPACE
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #545454;
+  line-height: 1;
+}
