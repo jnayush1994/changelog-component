@@ -22,12 +22,12 @@ Paragraph Default:
 
 ---02 COLORS
 - Background color: #fff
-- Text color: #545454
+- Text color: #545454 #868e96
 
 ---05 SHADOWS
 
 ---06 BORDER-RADIUS
-
+2rem
 
 ---07 WHITESPACE
 
@@ -52,4 +52,35 @@ body {
   font-weight: 400;
   color: #545454;
   line-height: 1;
+
+  /* make the body a full-screen flex container */
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center; /* vertical centering */
+  min-height: 100vh; /* ensure it fills the viewport */
+}
+
+.container {
+  width: 60rem;
+  height: 70rem;
+  /* margin is unnecessary when parent flex is centering */
+  border: 2px solid #545454;
+  border-radius: 2rem;
+  padding-top: 3rem; /* space from top of container */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* align items to top */
+  flex-direction: column;
+  gap: 2rem; /* equal spacing between flex items */
+  box-shadow: 0 0.4rem 1.6rem rgba(84, 84, 84, 0.15); /* subtle shadow effect */
+}
+
+.primary-heading {
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1.4rem;
+  color: #868e96;
 }
