@@ -5,17 +5,23 @@
 - FONT SIZE (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
+Used: 14 (description, date, button), 16 (changelog-title), 36 (primary-heading)
+
 - FONT WEIGHTS
 Defaults: 400
 Medium: 500
 Semi-bold: 600
 Bold: 700
 
+Used: 400 (body, changelog-title), 500 (primary-heading, date, button)
+
 - LINE HEIGHTS
 Default: 1
 Small1: 
 Medirm: 
 Paragraph Default: 
+
+Used: 1 (default)
 
 - Letter Spacing
 
@@ -24,15 +30,34 @@ Paragraph Default:
 - Background color: #fff
 - Text color: #545454 #868e96
 
+Used: 
+  - #fff (background)
+  - #545454 (primary text: headings, dates, titles, borders, timeline marker, timeline line)
+  - #868e96 (secondary text: description)
+  - #1a1a1a (button background)
+  - white (button text)
+
 ---05 SHADOWS
+
+Used: 0 0.4rem 1.6rem rgba(84, 84, 84, 0.15) (container shadow)
 
 ---06 BORDER-RADIUS
 2rem
+
+Used: 2rem (container), 0.8rem (button), 50% (timeline marker)
 
 ---07 WHITESPACE
 
 - SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+Used:
+  - 2rem: padding (changelog), gap (timeline-item), width (timeline line)
+  - 3rem: padding-top/bottom (container), margin-bottom (timeline-item)
+  - 1.2rem: button padding (vertical)
+  - 3rem: button padding (horizontal)
+  - 2rem: button margin-top, container gap
+  - 1.6rem: timeline marker size
 
 
 */
@@ -62,11 +87,14 @@ body {
 
 .container {
   width: 60rem;
-  height: 70rem;
+  min-height: 70rem;
+  max-height: 90vh;
+  overflow-y: auto;
   /* margin is unnecessary when parent flex is centering */
   border: 2px solid #545454;
   border-radius: 2rem;
   padding-top: 3rem; /* space from top of container */
+  padding-bottom: 3rem; /* space from bottom of container */
   display: flex;
   align-items: center;
   justify-content: flex-start; /* align items to top */
