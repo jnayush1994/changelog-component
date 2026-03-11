@@ -3,6 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="A beautiful and responsive changelog component showcasing the latest updates and releases with an interactive timeline design."
+    />
+    <meta
+      name="keywords"
+      content="changelog, component, timeline, updates, releases, frontend"
+    />
+    <meta name="author" content="Ayush Jain" />
+    <meta name="theme-color" content="#545454" />
+
+    <!-- Open Graph Tags (Social Media) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Changelog Component" />
+    <meta
+      property="og:description"
+      content="A beautiful and responsive changelog component showcasing the latest updates and releases with an interactive timeline design."
+    />
+    <meta property="og:url" content="https://yourwebsite.com/changelog" />
+    <meta property="og:image" content="https://yourwebsite.com/og-image.png" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Changelog Component" />
+    <meta
+      name="twitter:description"
+      content="A beautiful and responsive changelog component showcasing the latest updates and releases with an interactive timeline design."
+    />
+    <meta name="twitter:image" content="https://yourwebsite.com/og-image.png" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourwebsite.com/changelog" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,8 +68,76 @@
     <div class="container">
       <p class="primary-heading">Changelog</p>
       <p class="description">
-        Here's everythingwe have shippedin the past few days
+        Here's everything we have shipped in the past few days
       </p>
+
+      <div class="changelog">
+        <div class="timeline-item">
+          <div class="date">September 3, 2024</div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="changelog-title">
+              Announcing Projects on Frontend Roadmap
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="date">August 28, 2024</div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="changelog-title">
+              Build your learning habits with learning streaks
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="date">August 25, 2024</div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="changelog-title">Git and GitHub Roadmap</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="date">August 22, 2024</div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="changelog-title">
+              Submit your project solution and get feedback
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="date">August 15, 2024</div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="changelog-title">Backend Project Ideas</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="date">August 10, 2024</div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="changelog-title">Redis roadmap</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="date">August 1, 2024</div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="changelog-title">
+              Changelog page to help you stay in the loop
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-changelog">Visit Complete Changelog</button>
     </div>
   </body>
 </html>
